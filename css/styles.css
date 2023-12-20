@@ -17,6 +17,7 @@ body{
     background-color: var(--rosaclaro);
     margin: 0;
     padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* globals */
@@ -40,8 +41,18 @@ html{
     align-items: center;
     padding: 10px;
     
+    
 }
 
+@media (min-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+         
+
+    }
+}
 .img_header{
     width: 200px;
 }
@@ -74,6 +85,7 @@ h1{
     color: var(--azuloscuro);
     text-transform:uppercase;
     font-size:60px ;
+
 }
 
 
@@ -83,7 +95,9 @@ h1{
     background-color: var(--rosa);
     padding: 15px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -94,10 +108,20 @@ h1{
     text-transform: uppercase;
     border-radius: 8px;
     font-size:medium;
+    
 
 
 }
 
 :hover.options_mainnav{
     background-color: var(--azulbutton);
+}
+
+
+@media (min-width: 768px) {
+    .mainnav{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
 }
